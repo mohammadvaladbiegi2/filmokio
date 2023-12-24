@@ -1,0 +1,32 @@
+@import "./style/reset.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  direction: rtl;
+  background-color: var(--black);
+}
+
+@font-face {
+  font-family: IRANSansWeb_Medium;
+  src: url(../public/font/IRANSansWeb_Black.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../public/font/Poppins-Bold.ttf);
+}
+
+:root {
+  --yelow: #f5ad11;
+  --black: #232729;
+  --white: #f0f0f0;
+  --gray: #666;
+}
+
+.IRANSansWeb_Medium {
+  font-family: IRANSansWeb_Medium;
+}
+.Poppins {
+  font-family: Poppins;
+}
