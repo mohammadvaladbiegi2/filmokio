@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function VeblogBox() {
   return (
-    <div className="relative group cursor-pointer hover:-translate-y-3  transition duration-300">
+    <Link
+      to="/veblog/1"
+      className="relative group cursor-pointer hover:-translate-y-3  transition duration-300"
+    >
       <img
         src="/images/john-wick-4.jpg"
         className="w-[440px] h-[250px] object-cover   rounded-lg "
@@ -25,6 +29,6 @@ export default function VeblogBox() {
           زمان مطالعه: 7 دقیقه
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
