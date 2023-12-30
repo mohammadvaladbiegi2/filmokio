@@ -30,3 +30,17 @@ body {
 .Poppins {
   font-family: Poppins;
 }
+
+.card__placeholder {
+  animation: image-loading 1s linear infinite alternate;
+}
+
+@keyframes image-loading {
+  0% {
+    background-color: hsl(0, 0%, 7%);
+  }
+
+  100% {
+    background-color: hsl(206, 5%, 29%);
+  }
+}
