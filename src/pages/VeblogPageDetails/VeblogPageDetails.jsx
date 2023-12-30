@@ -8,9 +8,12 @@ export default function VeblogPageDetails() {
         alt=""
         className="object-cover h-[737px] w-full "
       />
-      <div class="overlay absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black to-transparent "></div>
+      <div className="overlay absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black to-transparent "></div>
+      <h1 className="absolute bottom-[50%] left-0 right-0 block text-center  text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+        معرفی پنج فیلم برتر ژانر اکشن در سال ۲۰۲۳
+      </h1>
       <div className="bg-[#0c1012] w-[80%] h-auto left-[10.5%] p-5 rounded-lg mt-[-150px] z-10 absolute flex flex-col gap-7">
-        <span className="text-white font-medium text-justify block leading-9">
+        <span className="text-[#f2f2f2] font-medium text-justify block leading-9">
           سال ۲۰۲۳ روزهای پایانی‌اش را سپری می‌کند و این روزها، بهترین زمان برای
           مرور و بررسی بهترین آثار منتشر شده در هرژانر از مدیوم‌های مختلف سرگرمی
           به شمار می‌رود. در جریان سال جاری میلادی، عناوین متعدد و برجسته‌ای در
