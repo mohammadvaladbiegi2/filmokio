@@ -16,8 +16,8 @@ export default function seriesisplaying() {
       </div>
 
       <div className="flex flex-wrap items-center justify-evenly mt-[30px] px-[70px]">
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder ">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 2
             </button>
@@ -37,8 +37,8 @@ export default function seriesisplaying() {
             Maestra: Strings of Truth
           </h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 2
             </button>
@@ -58,8 +58,8 @@ export default function seriesisplaying() {
             Captain Tsubasa
           </h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute">
               قسمت 6
             </button>
@@ -77,8 +77,8 @@ export default function seriesisplaying() {
           </div>
           <h5 className="text-white text-center text-[18px]">Fargo</h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 2
             </button>
@@ -98,8 +98,8 @@ export default function seriesisplaying() {
             Percy Jackson and the Olympians
           </h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 8
             </button>
@@ -119,8 +119,8 @@ export default function seriesisplaying() {
             The Story of Park's Marriage Contract
           </h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 9
             </button>
@@ -138,8 +138,8 @@ export default function seriesisplaying() {
           </div>
           <h5 className="text-white text-center text-[18px]">Family Guy</h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 11
             </button>
@@ -157,8 +157,8 @@ export default function seriesisplaying() {
           </div>
           <h5 className="text-white text-center text-[18px]">Spy x Family</h5>
         </div>
-        <div className="col cursor-pointer mb-5">
-          <div className="image-container">
+        <div className="col cursor-pointer mb-5 ">
+          <div className="image-container card__placeholder">
             <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">
               قسمت 8
             </button>

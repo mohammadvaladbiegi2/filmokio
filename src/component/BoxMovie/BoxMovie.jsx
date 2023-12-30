@@ -1,10 +1,14 @@
 import React from "react";
-export default function BoxMovie({ img }) {
+import { Link } from "react-router-dom";
+export default function BoxMovie({ img, href = "/movie/2" }) {
   return (
-    <div className="flex-none mx-auto cursor-pointer  group w-[67%] sm:w-[48%] md:w-[30%] lg:w-[15%] aspect-video m-2 relative">
+    <Link
+      to={href}
+      className="flex-none mx-auto cursor-pointer  group w-[67%] sm:w-[48%] md:w-[30%] lg:w-[15%] aspect-video m-2 relative"
+    >
       <img
         alt="Stutz 2022 movie poster"
-        className="rounded-lg brightness-100 group-hover:brightness-[0.3] transition duration-300  "
+        className="rounded-lg brightness-100 group-hover:brightness-[0.3] transition duration-300  card__placeholder"
         height="450"
         src={img}
         style={{
@@ -34,6 +38,6 @@ export default function BoxMovie({ img }) {
       </div>
 
       <p className="mt-2 text-center text-white">Stutz 2022</p>
-    </div>
+    </Link>
   );
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { IoChevronUpSharp } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
 import BoxMovie from "../../component/BoxMovie/BoxMovie";
+import ParticlsJS from "../../component/particls/ParticlsJS";
 export default function Serial() {
   const [show1, setshow1] = useState(false);
   const [show2, setshow2] = useState(false);
@@ -19,7 +20,7 @@ export default function Serial() {
 
   useEffect(() => {
     window.addEventListener("click", handleWindowClick);
-
+    window.scroll(0, 0);
     return () => {
       window.removeEventListener("click", handleWindowClick);
     };
@@ -27,6 +28,8 @@ export default function Serial() {
 
   return (
     <div className="pt-[200px]">
+      <ParticlsJS />
+
       <h1 className="font-medium text-center text-white text-5xl">
         همه سریال ها
       </h1>
