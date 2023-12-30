@@ -75,7 +75,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/weblog"
+                    to="/veblog"
                     className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium "
                   >
                     وبلاگ ها
@@ -139,7 +139,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  to="/weblog"
+                  to="/veblog"
                   className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium"
                 >
                   وبلاگ ها
