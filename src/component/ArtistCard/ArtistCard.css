@@ -1,0 +1,27 @@
+.info_Artist::before {
+  background: hsla(0, 0%, 100%, 0.1);
+  content: "";
+  height: 0.5px;
+  position: absolute;
+  right: 82px;
+  top: 60%;
+  width: 38%;
+}
+.info_Artist_Date::before {
+  background: hsla(0, 0%, 100%, 0.1);
+  content: "";
+  height: 0.5px;
+  position: absolute;
+  right: 85px;
+  top: 60%;
+  width: 42%;
+}
+.info_Artist_Age::before {
+  background: hsla(0, 0%, 100%, 0.1);
+  content: "";
+  height: 0.5px;
+  position: absolute;
+  right: 46px;
+  top: 60%;
+  width: 64%;
+}
