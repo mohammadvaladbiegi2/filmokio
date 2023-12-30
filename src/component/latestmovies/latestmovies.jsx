@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Scrollbar, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 export default function latestmovies() {
   return (
     <div className="container m-auto mt-[50px]">
@@ -13,9 +14,12 @@ export default function latestmovies() {
           <MdLocalMovies className="text-[#f5ad11] text-3xl me-3" />
           اخرین فیلم ها
         </div>
-        <button className="bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3]">
+        <Link
+          to="/movie"
+          className="bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3]"
+        >
           تمامی فیلم ها
-        </button>
+        </Link>
       </div>
 
       <div className="flex flex-wrap items-center justify-evenly  mt-[30px] px-[70px]">
