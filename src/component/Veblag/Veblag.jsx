@@ -12,7 +12,7 @@ export default function Veblag() {
           وبلاگ
         </div>
         <Link
-          to="/weblog"
+          to="/filmokio/weblog"
           className="bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3]"
         >
           وبلاگ ها

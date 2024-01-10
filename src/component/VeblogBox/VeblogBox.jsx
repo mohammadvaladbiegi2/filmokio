@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default function VeblogBox() {
   return (
     <Link
-      to="/veblog/1"
+      to="/filmokio/veblog/1"
       className="relative group cursor-pointer hover:-translate-y-3  transition duration-300"
     >
       <img
-        src="/images/john-wick-4.jpg"
-        className="w-[440px] h-[250px] object-cover   rounded-lg "
+        src="/filmokio/images/john-wick-4.jpg"
+        className="w-[440px] h-[250px] object-cover   rounded-lg card__placeholder"
         alt=""
       />
       <div className="absolute   left-4   top-4  ">

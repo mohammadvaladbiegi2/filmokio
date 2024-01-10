@@ -44,14 +44,14 @@ export default function NavBar() {
       >
         <div className="flex justify-around items-center py-4 ">
           <div className="flex items-center">
-            <Link to="/">
+            <Link to="/filmokio/">
               <img src="/images/FilmKio-logo-v4.png" />
             </Link>
             <div className="hidden lg:flex ">
               <ul className="flex justify-around w-[500px]">
                 <li>
                   <Link
-                    to="/movie"
+                    to="/filmokio/movie"
                     className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium "
                   >
                     فیلم ها
@@ -59,7 +59,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/serial"
+                    to="/filmokio/serial"
                     className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium "
                   >
                     سریال ها
@@ -67,7 +67,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/artists"
+                    to="/filmokio/artists"
                     className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium "
                   >
                     هنرمندان
@@ -75,7 +75,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link
-                    to="/veblog"
+                    to="/filmokio/veblog"
                     className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium "
                   >
                     وبلاگ ها
@@ -115,7 +115,7 @@ export default function NavBar() {
             <ul className="flex justify-around ">
               <li>
                 <Link
-                  to="/movie"
+                  to="/filmokio/movie"
                   className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium"
                 >
                   فیلم ها
@@ -123,7 +123,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  to="/serial"
+                  to="/filmokio/serial"
                   className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium"
                 >
                   سریال ها
@@ -131,7 +131,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  to="/artists"
+                  to="/filmokio/artists"
                   className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium"
                 >
                   هنرمندان
@@ -139,7 +139,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link
-                  to="/veblog"
+                  to="/filmokio/veblog"
                   className="text-white hover:text-[#f5ad11] transition-all duration-300 font-medium"
                 >
                   وبلاگ ها

@@ -20,25 +20,25 @@ export default function Footer() {
       </div>
       <div className="flex justify-center mt-5">
         <Link
-          to="/"
+          to="/filmokio/"
           className="text-[#666] mx-4 hover:text-yellow-500 translate duration-300"
         >
           صفحه نخست{" "}
         </Link>
         <Link
-          to="/movie"
+          to="/filmokio/movie"
           className="text-[#666] mx-4 hover:text-yellow-500 translate duration-300"
         >
           فیلم
         </Link>
         <Link
-          to="/serial"
+          to="/filmokio/serial"
           className="text-[#666] mx-4 hover:text-yellow-500 translate duration-300"
         >
           سریال
         </Link>
         <Link
-          to="/artists"
+          to="/filmokio/artists"
           className="text-[#666] mx-4 hover:text-yellow-500 translate duration-300"
         >
           هنرمندان

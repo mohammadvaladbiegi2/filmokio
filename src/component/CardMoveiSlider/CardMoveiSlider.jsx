@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function CardMoveiSlider({
-  href = "/movie/1",
+  href = "/filmokio/movie/1",
   img,
   score = " 7.6/10",
   desc = "شاهزاده پاندیان رانادهران در قرن هفتم حکومت می‌کرد. سلسله چولا قدرت خود را از دست داد و مردم آن مجبور به زندگی در جنگل‌ها شدند",
