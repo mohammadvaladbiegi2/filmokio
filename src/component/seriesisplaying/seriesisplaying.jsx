@@ -12,7 +12,7 @@ export default function seriesisplaying() {
           سریال های در حال پخش
         </div>
         <Link
-          to="/serial"
+          to="/filmokio/serial"
           className="bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3]"
         >
           تمامی سریال ها

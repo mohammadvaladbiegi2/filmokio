@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export default function BoxMovie({ img, href = "/movie/2" }) {
+export default function BoxMovie({ img, href = "/filmokio/movie/2" }) {
   return (
     <Link
       to={href}

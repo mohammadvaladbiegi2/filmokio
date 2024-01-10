@@ -8,7 +8,7 @@ export default function ArtistCard() {
         <img
           src="/images/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._SY600_SX400.jpg"
           alt=""
-          className="w-full h-full rounded-lg"
+          className="w-full h-full rounded-lg card__placeholder"
         />
       </div>
       <div className="text-center mt-5 ">
