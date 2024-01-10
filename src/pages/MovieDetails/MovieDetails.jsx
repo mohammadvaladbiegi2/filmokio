@@ -13,8 +13,8 @@ import CardMoveiSlider from "../../component/CardMoveiSlider/CardMoveiSlider";
 export default function MovieDetails() {
   window.scroll(0, 0);
   return (
-    <div className="pt-[200px] pb-12">
-      <ParticlsJS />
+    <div className="pt-[150px] pb-12">
+      {/* <ParticlsJS /> */}
       <div className=" text-white min-h-screen p-4 ">
         <div className=" mx-auto max-w-[24rem] md:max-w-[47rem] lg:max-w-[58rem] xl:max-w-none flex flex-col md:flex-row bg-Movie">
           <div className="w-[315px] h-[450px] sm:h-[500px] sm:w-[360px] mx-auto xl:max-w-none ">
@@ -62,17 +62,19 @@ export default function MovieDetails() {
                 <span className="text-sm ps-1">149k</span>
               </div>
             </div>
-            <div className="mt-4">
-              <span className="font-bold">کارگردان: </span>
-              Mel Brooks{"\n          "}
-            </div>
-            <div className="mt-2">
-              <span className="font-bold">ستارگان: </span>
-              Cleavon Little, Gene Wilder, Slim Pickens
-            </div>
-            <div className="mt-2">
-              <span className="font-bold">کشور: </span>
-              آمریکا
+            <div className="flex flex-col xl:flex-row xl:items-center xl:justify-center xl:gap-8 mt-6">
+              <div className="mt-2">
+                <span className="font-bold">کارگردان: </span>
+                Mel Brooks{"\n          "}
+              </div>
+              <div className="mt-2">
+                <span className="font-bold">ستارگان: </span>
+                Cleavon Little, Gene Wilder, Slim Pickens
+              </div>
+              <div className="mt-2">
+                <span className="font-bold">کشور: </span>
+                آمریکا
+              </div>
             </div>
             <div className="flex gap-3 mt-7">
               <button className="w-full bg-[#f5ad11] p-2 rounded-xl text-black">
@@ -90,7 +92,7 @@ export default function MovieDetails() {
         </div>
       </div>
 
-      <div className="w-full bg-slate-800 py-5 flex md:justify-evenly justify-center gap-8">
+      <div className="w-full bg-[#0c1012] py-5 flex md:justify-evenly justify-center gap-8">
         <span className="text-white font-medium hover:text-yellow-400 transition cursor-pointer ">
           دانلود
         </span>

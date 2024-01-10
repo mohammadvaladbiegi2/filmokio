@@ -5,7 +5,7 @@
 
 body {
   direction: rtl;
-  background-color: var(--black);
+  background-color: #1e1e1e;
 }
 
 @font-face {

@@ -5,6 +5,7 @@ import ParticlsJS from "../../component/particls/ParticlsJS";
 import ArtistCard from "../../component/ArtistCard/ArtistCard";
 
 export default function Artists() {
+  window.scroll(0, 0);
   const [show1, setshow1] = useState(false);
   const [show2, setshow2] = useState(false);
   const [show3, setshow3] = useState(false);
@@ -20,7 +21,7 @@ export default function Artists() {
 
   useEffect(() => {
     window.addEventListener("click", handleWindowClick);
-    window.scroll(0, 0);
+
     return () => {
       window.removeEventListener("click", handleWindowClick);
     };

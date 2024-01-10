@@ -4,6 +4,7 @@ import VeblagCard from "../../component/VeblagCard/VeblagCard";
 import VeblogBox from "../../component/VeblogBox/VeblogBox";
 
 export default function VeblogPage() {
+  window.scroll(0, 0);
   return (
     <div className="pt-[200px]">
       <ParticlsJS />

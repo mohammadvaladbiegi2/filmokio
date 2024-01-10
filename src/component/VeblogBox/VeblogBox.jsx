@@ -20,11 +20,11 @@ export default function VeblogBox() {
           ۷ دی ۱۴۰۲
         </button>
       </div>
-      <div class="absolute  overlay">
+      <div className="absolute  overlay">
         <h2 className="text-[17px] group-hover:text-[#f5ad11] transition  text-white w-full font-medium overflow-ellipsis bottom-9 right-1 absolute">
           معرفی پنج فیلم برتر ژانر اکشن در سال ۲۰۲۳
         </h2>
-        <div class="group-hover:text-[#f5ad11] transition  bottom-2 right-1 absolute text-[#f2f2f2] font-medium">
+        <div className="group-hover:text-[#f5ad11] transition  bottom-2 right-1 absolute text-[#f2f2f2] font-medium">
           {" "}
           زمان مطالعه: 7 دقیقه
         </div>

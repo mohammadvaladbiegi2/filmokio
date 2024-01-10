@@ -27,7 +27,7 @@ export default function BoxMovie({ img, href = "/movie/2" }) {
       </div>
 
       <div className="absolute  w-full inset-0 flex flex-col items-center overflow-hidden  justify-between opacity-0 group-hover:opacity-100 transition duration-300">
-        <p className="text-white text-[15px]  p-4 mb-2  desc  text-justify line-clamp-5 lg:line-clamp-3 xl:line-clamp-5">
+        <p className="text-white text-[13px] sm:text-[15px]   p-4 mb-2  desc  text-justify line-clamp-5 lg:line-clamp-3 xl:line-clamp-5">
           شاهزاده پاندیان رانادهران در قرن هفتم حکومت می‌کرد. سلسله چولا قدرت
           خود را از دست داد و مردم آن مجبور به زندگی در جنگل‌ها شدند.
         </p>
