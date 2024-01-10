@@ -11,6 +11,16 @@ export default function Artists() {
   const [show3, setshow3] = useState(false);
   const mycomponent = useRef();
 
+  const fetchArtist = async () => {
+    try {
+      let respons = await fetch("/Data.json");
+      let data = await respons.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const handleWindowClick = (event) => {
     if (!mycomponent.current.contains(event.target)) {
       setshow1(false);
@@ -21,7 +31,7 @@ export default function Artists() {
 
   useEffect(() => {
     window.addEventListener("click", handleWindowClick);
-
+    fetchArtist();
     return () => {
       window.removeEventListener("click", handleWindowClick);
     };

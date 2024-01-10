@@ -1,6 +1,5 @@
 import React from "react";
 import ParticlsJS from "../../component/particls/ParticlsJS";
-import VeblagCard from "../../component/VeblagCard/VeblagCard";
 import VeblogBox from "../../component/VeblogBox/VeblogBox";
 
 export default function VeblogPage() {
