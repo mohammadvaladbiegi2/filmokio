@@ -3,35 +3,32 @@ import { IoChevronUpSharp } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
 import ParticlsJS from "../../component/particls/ParticlsJS";
 import ArtistCard from "../../component/ArtistCard/ArtistCard";
+import { useSelector, useDispatch } from "react-redux";
+import Loader from "../../component/Loader/Loader";
+import { getArtistFromServer } from "../../Redux/stors/ArtistsReduce";
 
 export default function Artists() {
   window.scroll(0, 0);
   const [show1, setshow1] = useState(false);
   const [show2, setshow2] = useState(false);
-  const [show3, setshow3] = useState(false);
-  const mycomponent = useRef();
 
-  const fetchArtist = async () => {
-    try {
-      let respons = await fetch("/Data.json");
-      let data = await respons.json();
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  const mycomponent = useRef();
+  const dispatch = useDispatch();
+  const { AllArtist, isLoading, isreject } = useSelector(
+    (state) => state.Artist
+  );
 
   const handleWindowClick = (event) => {
     if (!mycomponent.current.contains(event.target)) {
       setshow1(false);
       setshow2(false);
-      setshow3(false);
     }
   };
 
   useEffect(() => {
     window.addEventListener("click", handleWindowClick);
-    fetchArtist();
+    dispatch(getArtistFromServer());
+
     return () => {
       window.removeEventListener("click", handleWindowClick);
     };
@@ -112,14 +109,13 @@ export default function Artists() {
         </div>
 
         <div className="flex justify-center items-center flex-wrap gap-5 mt-20">
-          <ArtistCard />
-          <ArtistCard />
-          <ArtistCard />
-          <ArtistCard />
-          <ArtistCard />
-          <ArtistCard />
-          <ArtistCard />
-          <ArtistCard />
+          {isLoading ? (
+            <Loader />
+          ) : (
+            AllArtist.map((artist) => (
+              <ArtistCard key={artist.id} {...artist} />
+            ))
+          )}
         </div>
 
         <div className="flex items-center mt-10 justify-center gap-2">

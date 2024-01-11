@@ -44,3 +44,12 @@ body {
     background-color: hsl(206, 5%, 29%);
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--yelow);
+}
