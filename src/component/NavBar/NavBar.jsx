@@ -45,7 +45,7 @@ export default function NavBar() {
         <div className="flex justify-around items-center py-4 ">
           <div className="flex items-center">
             <Link to="/filmokio/">
-              <img src="/images/FilmKio-logo-v4.png" />
+              <img src="/filmokio/images/FilmKio-logo-v4.png" />
             </Link>
             <div className="hidden lg:flex ">
               <ul className="flex justify-around w-[500px]">

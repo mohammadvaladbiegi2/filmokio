@@ -3,13 +3,19 @@ import { IoChevronUpSharp } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
 import BoxMovie from "../../component/BoxMovie/BoxMovie";
 import ParticlsJS from "../../component/particls/ParticlsJS";
+import { useDispatch, useSelector } from "react-redux";
+import { getSerialFromServer } from "../../Redux/stors/SerialReduce";
+import Loader from "../../component/Loader/Loader";
 export default function Serial() {
   const [show1, setshow1] = useState(false);
   const [show2, setshow2] = useState(false);
   const [show3, setshow3] = useState(false);
 
   const myComponentRef = useRef();
-
+  const dispatch = useDispatch();
+  const { AllSerial, isLoading, isreject } = useSelector(
+    (state) => state.Serial
+  );
   const handleWindowClick = (event) => {
     if (!myComponentRef.current.contains(event.target)) {
       setshow1(false);
@@ -21,6 +27,7 @@ export default function Serial() {
   useEffect(() => {
     window.addEventListener("click", handleWindowClick);
     window.scroll(0, 0);
+    dispatch(getSerialFromServer());
     return () => {
       window.removeEventListener("click", handleWindowClick);
     };
@@ -163,24 +170,11 @@ export default function Serial() {
           </div>
         </div>
         <div className="flex justify-center flex-wrap gap-1">
-          <BoxMovie img="/images/MV5BMWRhZmJkNzAtMzdiNC00ZDAzLWExOWUtYWQ2NzVlNmRhNDlhXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_SX500.jpg" />
-          <BoxMovie img="/images/percy-jackson-and-the-olympians-poster.jpg" />
-          <BoxMovie img="/images/MV5BMGE4NGVlNTctYWRiYy00MmYwLTkwZmItZDMwN2QwZDc5MDc0XkEyXkFqcGd-scaled.jpg" />
-          <BoxMovie img="/images/MV5BOGQ3ZjhhYzEtNjczZi00YTlhLThlNzctNWU4NTBhMzYxNzg4XkEyXkFqcGdeQXVyMTQzNTA5MzYz._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BNWUzODllZDYtNDEyOC00NzZlLTkzYmMtMWE0YWEwYTA1Y2RhXkEyXkFqcGdeQXVyMTI4ODE4ODA@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BNTA2NmY5MzgtY2ExNC00ZjlhLTk2MWItNDQxNmQwZDU4OTUwXkEyXkFqcGdeQXVyODQyMjM0ODI@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BZmZlZjQ1MzgtNmVjNS00YzUxLTlkMTUtMTU0NDFhNzJjMTkyXkEyXkFqcGdeQXVyNjk1NzU1Mjk@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BMTY2MGEzNmItOGRjOC00Njk1LWJjYjctMGUwOGIwNzk3NzBkXkEyXkFqcGdeQXVyMTk3NDAwMzI@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BZmVhNDY4ODEtMGY2My00MDZjLThjMmItYTE0OGYyMjJjZTkwXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BNjIzZDg2YWUtZGEwOS00OGM5LTgwZTgtMGVhMTFiZDhjMjExXkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BZDg5OTgzNTEtMDJmOS00MWMzLWFmYmQtNTNlZjg5YjI1YjRiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BMjBiODgyMWMtYzRkZC00MTM3LWI5YWEtMmQ0ZDM0NjgxZGM0XkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BZDhiZmQ5MDktODRmNC00NDc3LWFmMTQtNTRmNWZjMDdjMWVkXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_SX500.jpg" />
-          <BoxMovie img="/images/monarch-legacy-of-monsters-poster.jpg" />
-          <BoxMovie img="/images/MV5BZjRkM2IyM2UtYzRkYi00ODdlLWFiODktODQzZWNiMmFjZjM1XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX500.jpg" />
-          <BoxMovie img="/images/MV5BMTU0MTAxNTUzMl5BMl5BanBnXkFtZTgwMTE0NDg4OTE@._V1_SX500.jpg" />
-          <BoxMovie img="/images/vigilante-poster.jpg" />
-          <BoxMovie img="/images/MV5BYTRhMWE1NjMtZTc0YS00YTU0LTlkYzgtMzE5MGFlZmVjYTFlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX500.jpg" />
+          {isLoading ? (
+            <Loader />
+          ) : (
+            AllSerial.map((serial) => <BoxMovie key={serial.id} {...serial} />)
+          )}
         </div>
         <div className="flex items-center mt-10 justify-center gap-2">
           <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-2xl px-10 py-5 flex items-center justify-center w-5 h-5">
