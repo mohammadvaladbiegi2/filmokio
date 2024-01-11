@@ -150,7 +150,7 @@
          {"Quality":720,"Volume":400},
          {"Quality":480,"Volume":150}
          ],
-         "image" : "/filmokio/images/.jpg",
+         "image" : "/filmokio/images/MV5BYjQyZTYwZTgtNGYzZC00YWQzLThiYWQtYTcwYjM0N2Q3YjE1XkEyXkFqcGdeQXVyMTAxNzQ1NzI@._V1_SX500.jpg",
          "timeE" : 70,
          "year": 2021,
          "Vote" : 4,
@@ -210,7 +210,7 @@
          {"Quality":720,"Volume":400},
          {"Quality":480,"Volume":150}
          ],
-         "image" : "/filmokio/images/.jpg",
+         "image" : "/filmokio/images/MV5BYWYxODU1ZDItYzg1Ny00OGE5LTkzNmUtZWY0MjhmODE2NGJjXkEyXkFqcGdeQXVyNjQzOTQyODA@._V1_SX500.jpg",
          "timeE" : 150,
          "year": 2017,
          "Vote" : 270,
@@ -385,6 +385,7 @@
             ]}
          ],
          "image" : "/filmokio/images/MV5BMzE3MDk0ODkwM15BMl5BanBnXkFtZTgwMzA5NTk5MTI@._V1_SX500.jpg",
+         "bgSlider" : "/filmokio/images/1209ffcfa927d3553cf33f4a4b5b83f843acce432f2f322ca6491b05f784bd56.jpg",
          "timeE" : 54,
          "year": 2017,
          "Vote" : 27,
@@ -394,102 +395,8 @@
 "Language" : "English",
 "writer": "Álex Pina"
         },
-        {
-            "id": 2,
-            "title": "The Son 2017",
-            "score": 7.5,
-            "shortDesk" :"روایت حماسی چند نسلی از داستان تولد آمریکا به عنوان یک ابرقدرت از طریق ظهور و سقوط خونین یکی از امپراتوری نفت تگزاس.",
-         "link" : [
-         {"Quality":1080,"Volume":700, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]},
-         {"Quality":720,"Volume":400, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]},
-         {"Quality":480,"Volume":150, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]}
-         ],
-         "image" : "/filmokio/images/MV5BMjI2NzM4MzE2OF5BMl5BanBnXkFtZTgwMjczODQ2NzM@._V1_SX500.jpg",
-         "timeE" : 90,
-         "year": 2022,
-         "Vote" : 10,
-         "desc" : "روایت حماسی چند نسلی از داستان تولد آمریکا به عنوان یک ابرقدرت از طریق ظهور و سقوط خونین یکی از امپراتوری نفت تگزاس.",
-"popularity" : 75,
-"category" : "drama",
-"Language" : "English",
-"writer": "Álex Pina"
-        },
-        {
-            "id": 3,
-            "title": "Joe Pickett 2021",
-            "score": 7.7,
-            "shortDesk" :"یک نگهبان بازی و خانواده اش را در طول یک تغییر شرایط سیاسی و اقتصادی اجتماعی در یک شهر کوچک روستایی دنبال می کند.",
-         "link" : [
-         {"Quality":1080,"Volume":700, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]},
-         {"Quality":720,"Volume":400, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]},
-         {"Quality":480,"Volume":150, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]}
-         ],
-         "image" : "/filmokio/images/MV5BMjkyZGQ3YWQtYjc0ZS00OTE0LTgwZTktZjM1ZDViMzBhNWM3XkEyXkFqcGdeQXVyMTMzOTQyOTk1._V1_SX500.jpg",
-         "timeE" : 80,
-         "year": 2020,
-         "Vote" : 18,
-         "desc" : "یک نگهبان بازی و خانواده اش را در طول یک تغییر شرایط سیاسی و اقتصادی اجتماعی در یک شهر کوچک روستایی دنبال می کند.",
-"popularity" : 77,
-"category" : "drama",
-"Language" : "English",
-"writer": "Álex Pina"
-        },
-        {
-            "id": 4,
-            "title": "The Brothers Sun 2024",
-            "score": 7.8,
-            "shortDesk" :"داستان یک خلافکار اهل تایپه به‌نام چارلز سان که مسیر زندگی خود را به‌عنوان یک قاتل بی‌رحم انتخاب کرده است، اما حالا باید به لس آنجلس برود تا از مادر و برادر کوچک‌ترش پس از کشته شدن پدرش به دست یک آدمکش مرموز، محافظت کند.",
-         "link" : [
-         {"Quality":1080,"Volume":700, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]},
-         {"Quality":720,"Volume":400, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]},
-         {"Quality":480,"Volume":150, "links":[
-            {"Section": "اول"},
-            {"Section": "دوم"},
-            {"Section": "سوم"}
-            ]}
-         ],
-         "image" : "/filmokio/images/MV5BNjEwMmYzN2QtMmFiNS00NThkLTlhMmYtZDg1OTk1ZDAyNjY5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX500.jpg",
-         "timeE" : 69,
-         "year": 2024,
-         "Vote" : 2.8,
-         "desc" : "داستان یک خلافکار اهل تایپه به‌نام چارلز سان که مسیر زندگی خود را به‌عنوان یک قاتل بی‌رحم انتخاب کرده است، اما حالا باید به لس آنجلس برود تا از مادر و برادر کوچک‌ترش پس از کشته شدن پدرش به دست یک آدمکش مرموز، محافظت کند.",
-"popularity" : 78,
-"category" : "comedy",
-"Language" : "English,Chinese",
-"writer": "Álex Pina"
-        },
+      
+       
         {
             "id": 5,
             "title": "Gravity Falls 2012",
@@ -513,6 +420,7 @@
             ]}
          ],
          "image" : "/filmokio/images/MV5BMTEzNDc3MDQ2NzNeQTJeQWpwZ15BbWU4MDYzMzUwMDIx._V1_SX500.jpg",
+         "bgSlider" : "/filmokio/images/image-w1280.webp",
          "timeE" : 400,
          "year": 2018,
          "Vote" : 320,
@@ -524,7 +432,7 @@
         },
         {
             "id": 6,
-            "title": "Once Upon a Boyhood 2023",
+            "title": "Once Upon 2023",
             "score": 7.7,
             "shortDesk" :"جانگ بیونگ تائه دانش آموز دبیرستانی در اونیانگ، استان چونگ چئونگ جنوبی است. او در مدرسه اش مورد آزار و اذیت قرار می گیرد. آرزوی او این است که قلدری در حق او متوقف شود. یک شب خانواده او به طور ناگهانی به بویو که در همان استان قرار دارد نقل مکان می کنند. در این زمان، شایعه‌ای در میان دانش‌آموزان مدرسه جدید جانگ بیونگ تائه منتشر می‌شود مبنی بر اینکه پسری که بهترین مبارز در اسان است و نام مستعار ببر سفید دارد، به مدرسه آنها منتقل می‌شود.",
          "link" : [
@@ -545,6 +453,7 @@
             ]}
          ],
          "image" : "/filmokio/images/MV5BMjYyNmVjNTEtNzgzZS00YTY0LTg4MzItYzQ5ZWE1ZjJiY2IyXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_SX500.jpg",
+         "bgSlider" : "/filmokio/images/Boyhood-1-2.jpg",
          "timeE" : 30,
          "year": 2023,
          "Vote" : 32,
@@ -556,7 +465,7 @@
         },
         {
             "id": 7,
-            "title": "Jeffrey Epstein: Filthy Ri...",
+            "title": "Jeffrey Epstein",
             "score": 7.1,
             "shortDesk" :"بازماندگان این حادثه، فریبکاری، سوء استفاده و زخم های عاطفی را که از جفری اپستین و گیسلین ماکسول متحمل شده اند را فاش می کنند. داستان های آنها یک حلقه قاچاق جنسی متشکل از عوامل قدرتمند را افشا می کند که منجر به دستگیری او در سال 2019 شد.",
          "link" : [
@@ -577,6 +486,7 @@
             ]}
          ],
          "image" : "/filmokio/images/jeffrey-epstein-filthy-rich-poster.jpg",
+         "bgSlider" : "/filmokio/images/EPSTEIN_SDP_JA_01_R4_V1.jpg",
          "timeE" : 183,
          "year": 2020,
          "Vote" : 28,
@@ -811,6 +721,38 @@
 "writer": "Álex Pina"
         },
         {
+         "id": 4,
+         "title": "The Brothers Sun 2024",
+         "score": 7.8,
+         "shortDesk" :"داستان یک خلافکار اهل تایپه به‌نام چارلز سان که مسیر زندگی خود را به‌عنوان یک قاتل بی‌رحم انتخاب کرده است، اما حالا باید به لس آنجلس برود تا از مادر و برادر کوچک‌ترش پس از کشته شدن پدرش به دست یک آدمکش مرموز، محافظت کند.",
+      "link" : [
+      {"Quality":1080,"Volume":700, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]},
+      {"Quality":720,"Volume":400, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]},
+      {"Quality":480,"Volume":150, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]}
+      ],
+      "image" : "/filmokio/images/MV5BNjEwMmYzN2QtMmFiNS00NThkLTlhMmYtZDg1OTk1ZDAyNjY5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX500.jpg",
+      "timeE" : 69,
+      "year": 2024,
+      "Vote" : 2.8,
+      "desc" : "داستان یک خلافکار اهل تایپه به‌نام چارلز سان که مسیر زندگی خود را به‌عنوان یک قاتل بی‌رحم انتخاب کرده است، اما حالا باید به لس آنجلس برود تا از مادر و برادر کوچک‌ترش پس از کشته شدن پدرش به دست یک آدمکش مرموز، محافظت کند.",
+"popularity" : 78,
+"category" : "comedy",
+"Language" : "English,Chinese",
+"writer": "Álex Pina"
+     },
+        {
             "id": 15,
             "title": "The Curse 2023",
             "score": 6.7,
@@ -937,18 +879,81 @@
 "category" : "Romantic",
 "Language" : "French,English",
 "writer": "Álex Pina"
-        }
+        } , {
+         "id": 2,
+         "title": "The Son 2017",
+         "score": 7.5,
+         "shortDesk" :"روایت حماسی چند نسلی از داستان تولد آمریکا به عنوان یک ابرقدرت از طریق ظهور و سقوط خونین یکی از امپراتوری نفت تگزاس.",
+      "link" : [
+      {"Quality":1080,"Volume":700, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]},
+      {"Quality":720,"Volume":400, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]},
+      {"Quality":480,"Volume":150, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]}
+      ],
+      "image" : "/filmokio/images/MV5BMjI2NzM4MzE2OF5BMl5BanBnXkFtZTgwMjczODQ2NzM@._V1_SX500.jpg",
+      "timeE" : 90,
+      "year": 2022,
+      "Vote" : 10,
+      "desc" : "روایت حماسی چند نسلی از داستان تولد آمریکا به عنوان یک ابرقدرت از طریق ظهور و سقوط خونین یکی از امپراتوری نفت تگزاس.",
+"popularity" : 75,
+"category" : "drama",
+"Language" : "English",
+"writer": "Álex Pina"
+     },
+     {
+         "id": 3,
+         "title": "Joe Pickett 2021",
+         "score": 7.7,
+         "shortDesk" :"یک نگهبان بازی و خانواده اش را در طول یک تغییر شرایط سیاسی و اقتصادی اجتماعی در یک شهر کوچک روستایی دنبال می کند.",
+      "link" : [
+      {"Quality":1080,"Volume":700, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]},
+      {"Quality":720,"Volume":400, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]},
+      {"Quality":480,"Volume":150, "links":[
+         {"Section": "اول"},
+         {"Section": "دوم"},
+         {"Section": "سوم"}
+         ]}
+      ],
+      "image" : "/filmokio/images/MV5BMjkyZGQ3YWQtYjc0ZS00OTE0LTgwZTktZjM1ZDViMzBhNWM3XkEyXkFqcGdeQXVyMTMzOTQyOTk1._V1_SX500.jpg",
+      "timeE" : 80,
+      "year": 2020,
+      "Vote" : 18,
+      "desc" : "یک نگهبان بازی و خانواده اش را در طول یک تغییر شرایط سیاسی و اقتصادی اجتماعی در یک شهر کوچک روستایی دنبال می کند.",
+"popularity" : 77,
+"category" : "drama",
+"Language" : "English",
+"writer": "Álex Pina"
+     }
     ],
     "Weblogs":[
-        {"id":1,"title":"معرفی پنج فیلم برتر ژانر اکشن در سال ۲۰۲۳","time":5,"image":"/images/john-wick-4.jpg","date":"۷ دی ۱۴۰۲"},
-        {"id":2,"title":"کیتلین دیور ایفاگر نقش ابی در فصل دوم سریال The Last of Us خواهد بود","time":3,"image":"/images/dever.jpg","date":"۲۰ دی ۱۴۰۲"},
-        {"id":3,"title":"سریال Ahsoka برای فصل دوم تمدید شد","time":2,"image":"/images/ahsoka_tano.jpg","date":"۲۰ دی ۱۴۰۲"},
-        {"id":4,"title":"روند تولید فصل پنجم سریال Stranger Things آغاز شد","time":3,"image":"/images/stranger-things.jpg","date":"۱۹ دی ۱۴۰۲"},
-        {"id":5,"title":"باکس آفیس│ ۱۸ دی","time":5,"image":"/images/wonka-movie-2023.jpg","date":"۱۸ دی ۱۴۰۲"},
-        {"id":6,"title":"برندگان مراسم گلدن گلوب ۲۰۲۴ مشخص شدند","time":6,"image":"/images/oppenheimer-movie-2023.jpg","date":"۱۸ دی ۱۴۰۲"},
-        {"id":7,"title":"فرانسیس فورد کاپولا انتشار فیلم Megalopolis ","time":3,"image":"/images/megalopolis.jpg","date":"۱۷ دی ۱۴۰۲"},
-        {"id":8,"title":"جرارد باتلر در لایو اکشن How to Train Your Dragon","time":4,"image":"/images/gerard.jpg","date":"۱۷ دی ۱۴۰۲"},
-        {"id":9,"title":"جیمز گان از علاقه‌اش به هم‌کاری با مارگو رابی","time":3,"image":"/images/harley-quinn-margot.jpg","date":"۱۶ دی ۱۴۰۲"}
+        {"id":1,"title":"معرفی پنج فیلم برتر ژانر اکشن در سال ۲۰۲۳","time":5,"image":"/filmokio/images/john-wick-4.jpg","date":"۷ دی ۱۴۰۲"},
+        {"id":2,"title":"کیتلین دیور ایفاگر نقش ابی در فصل دوم سریال The Last of Us خواهد بود","time":3,"image":"/filmokio/images/dever.jpg","date":"۲۰ دی ۱۴۰۲"},
+        {"id":3,"title":"سریال Ahsoka برای فصل دوم تمدید شد","time":2,"image":"/filmokio/images/ahsoka_tano.jpg","date":"۲۰ دی ۱۴۰۲"},
+        {"id":4,"title":"روند تولید فصل پنجم سریال Stranger Things آغاز شد","time":3,"image":"/filmokio/images/stranger-things.jpg","date":"۱۹ دی ۱۴۰۲"},
+        {"id":5,"title":"باکس آفیس│ ۱۸ دی","time":5,"image":"/filmokio/images/wonka-movie-2023.jpg","date":"۱۸ دی ۱۴۰۲"},
+        {"id":6,"title":"برندگان مراسم گلدن گلوب ۲۰۲۴ مشخص شدند","time":6,"image":"/filmokio/images/oppenheimer-movie-2023.jpg","date":"۱۸ دی ۱۴۰۲"},
+        {"id":7,"title":"فرانسیس فورد کاپولا انتشار فیلم Megalopolis ","time":3,"image":"/filmokio/images/megalopolis.jpg","date":"۱۷ دی ۱۴۰۲"},
+        {"id":8,"title":"جرارد باتلر در لایو اکشن How to Train Your Dragon","time":4,"image":"/filmokio/images/gerard.jpg","date":"۱۷ دی ۱۴۰۲"},
+        {"id":9,"title":"جیمز گان از علاقه‌اش به هم‌کاری با مارگو رابی","time":3,"image":"/filmokio/images/harley-quinn-margot.jpg","date":"۱۶ دی ۱۴۰۲"}
     ],
     "Artists":[
         {
@@ -1101,9 +1106,9 @@
       
     ],
     "Frequentlyaskedquestions":[
-    {"id":1,"title":"چرا زمانی که بر روی لینک دانلود کلیک میکنم دانلود نمیشود یا بصورت آنلاین پخش میشود؟","desc":"دانلود از سایت تنها با برنامه ها مدیریت دانلود امکان پذیر میباشد ، به دلیل قوانین جدید گوگل امکان دانلود فایل های حجیم بصورت مستقیم بر روی مرورگر وجود ندارد . به همین منظور کافیست لینک دانلود فیلم مورد نظر خود را از سایت کپی کرده (بر روی لینک کلیک راست کنید یا طولانی لمس نمایید سپس Copy link address) و در دانلود منیجر های معرفی شده وارد نمایید. (برای دانلود Vpn خود را خاموش کنید)","show":0},
-    {"id":2,"title":"چرا در زمان عضویت با خطا مواجهه می شوم و نمیتوانم عضو شوم؟","desc":"نام کاربری غیر مجاز است که به دو دلیل است که در زیر خواهیم دید: – کاراکترهای غیرمجاز: فاصله (space) و سایر کاراکتر‌ها )) …! ? * & @ – نام کاربری تکراری: یک نام کاربری رو دو نفر نمیتوانن استفاده کنن و نام کاربری های رند مثل اسم رو با توجه به تعداد عضو های بالا قبلا ثبت شده برای تکراری نبودن آخر نام کاربری عدد اضافه کنید یا حروفی که تکراری نباشد. – حداقل ۴ حرف را وارد کنید ایمیل صحیح نیست که به دو دلیل است که در زیر خواهیم دید: – قبل از هر چیزی باید بدونید ایمیل همان پست الکترونیک شماست و بایستی بدون www وارد شود. اگر ایمیل یا پست الکترونیک صحیح نزنید در موقع فراموشی رمز عبور و بازیابی اکانت با مشکل مواجه خواهید شد. – در ایمیل خود فاصله (space) نزارید هیچ ایمیلی فاصله بین حروف نداره.","show":0},
-    {"id":3,"title":" فیلم یا سریال را دانلود کرده ام ولی زیرنویس ندارد؟","desc":"قبل از هرچیزی قبل از دانلود دقت داشته باشید که محتوای مورد نظر زیرنویس فارسی دارد یا خیر، در صورت داشتن زیرنویس در ۳ بخش درج خواهد شد، ۱- پوستر ۲- متن ۳- اول منو کشویی دانلود به صورت سه گوش، چنانچه نداشته باشد محتوای مورد نظر دارای زیرنویس نیست، همچنین گاهی پیش می آید که پلیر شما به صورت پیشفرض زیرنویس چسبیده پخش نمی کند چنانچه نسخه های سافت ساب (SoftSub) را دانلود نموده اید ، در دستگاه یا پلیر خود ، از منوی تنظیمات ، منوی Subtitle ، چک نموده گزینه زیرنویس فعال باشد و زبان زیرنویس بر روی فارسی (PER or FA) باشد. نکته: در برخی سریال ها زیرنویس به صورت ناقص وجود دارد مثلا چند قسمت از یک فصل دارای زیرنویس است ولی کل فصل تگ زیرنویس خرده که اگر از تنظیمات Subtitle زیرنویس فارسی مشاهده نکردید یعنی زیرنویس ندارد.","show":0}
+    {"id":1,"title":"چرا زمانی که بر روی لینک دانلود کلیک میکنم دانلود نمیشود یا بصورت آنلاین پخش میشود؟","desc":"دانلود از سایت تنها با برنامه ها مدیریت دانلود امکان پذیر میباشد ، به دلیل قوانین جدید گوگل امکان دانلود فایل های حجیم بصورت مستقیم بر روی مرورگر وجود ندارد . به همین منظور کافیست لینک دانلود فیلم مورد نظر خود را از سایت کپی کرده (بر روی لینک کلیک راست کنید یا طولانی لمس نمایید سپس Copy link address) و در دانلود منیجر های معرفی شده وارد نمایید. (برای دانلود Vpn خود را خاموش کنید)","show":false},
+    {"id":2,"title":"چرا در زمان عضویت با خطا مواجهه می شوم و نمیتوانم عضو شوم؟","desc":"نام کاربری غیر مجاز است که به دو دلیل است که در زیر خواهیم دید: – کاراکترهای غیرمجاز: فاصله (space) و سایر کاراکتر‌ها )) …! ? * & @ – نام کاربری تکراری: یک نام کاربری رو دو نفر نمیتوانن استفاده کنن و نام کاربری های رند مثل اسم رو با توجه به تعداد عضو های بالا قبلا ثبت شده برای تکراری نبودن آخر نام کاربری عدد اضافه کنید یا حروفی که تکراری نباشد. – حداقل ۴ حرف را وارد کنید ایمیل صحیح نیست که به دو دلیل است که در زیر خواهیم دید: – قبل از هر چیزی باید بدونید ایمیل همان پست الکترونیک شماست و بایستی بدون www وارد شود. اگر ایمیل یا پست الکترونیک صحیح نزنید در موقع فراموشی رمز عبور و بازیابی اکانت با مشکل مواجه خواهید شد. – در ایمیل خود فاصله (space) نزارید هیچ ایمیلی فاصله بین حروف نداره.","show":false},
+    {"id":3,"title":" فیلم یا سریال را دانلود کرده ام ولی زیرنویس ندارد؟","desc":"قبل از هرچیزی قبل از دانلود دقت داشته باشید که محتوای مورد نظر زیرنویس فارسی دارد یا خیر، در صورت داشتن زیرنویس در ۳ بخش درج خواهد شد، ۱- پوستر ۲- متن ۳- اول منو کشویی دانلود به صورت سه گوش، چنانچه نداشته باشد محتوای مورد نظر دارای زیرنویس نیست، همچنین گاهی پیش می آید که پلیر شما به صورت پیشفرض زیرنویس چسبیده پخش نمی کند چنانچه نسخه های سافت ساب (SoftSub) را دانلود نموده اید ، در دستگاه یا پلیر خود ، از منوی تنظیمات ، منوی Subtitle ، چک نموده گزینه زیرنویس فعال باشد و زبان زیرنویس بر روی فارسی (PER or FA) باشد. نکته: در برخی سریال ها زیرنویس به صورت ناقص وجود دارد مثلا چند قسمت از یک فصل دارای زیرنویس است ولی کل فصل تگ زیرنویس خرده که اگر از تنظیمات Subtitle زیرنویس فارسی مشاهده نکردید یعنی زیرنویس ندارد.","show":false}
     ]
     
 }
