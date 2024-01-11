@@ -69,7 +69,7 @@ export default function Movie() {
                 show1
                   ? "animate__animated animate__fadeInUp animate__faster"
                   : "hidden"
-              }  z-20 p-2 text-justify text-white bg-[#666] h-auto mt-1 rounded-2xl`}
+              }  z-20 p-2 text-justify text-white bg-[#232729] h-auto mt-1 rounded-2xl`}
             >
               <div className="hover:text-yellow-500 py-2">بروز ترین</div>
               <hr />
@@ -103,7 +103,7 @@ export default function Movie() {
                 show2
                   ? "animate__animated animate__fadeInUp animate__faster"
                   : "hidden"
-              }  z-20 p-2 text-justify text-white bg-[#666] h-auto mt-1 rounded-2xl`}
+              }  z-20 p-2 text-justify text-white bg-[#232729] h-auto mt-1 rounded-2xl`}
             >
               <div className="hover:text-yellow-500 py-2">بالا 9</div>
               <hr />
@@ -139,7 +139,7 @@ export default function Movie() {
                 show3
                   ? "animate__animated animate__fadeInUp animate__faster"
                   : "hidden"
-              }  z-20 p-2 text-justify text-white bg-[#666] h-auto mt-1 rounded-2xl`}
+              }  z-20 p-2 text-justify text-white bg-[#232729] h-auto mt-1 rounded-2xl`}
             >
               <div className="hover:text-yellow-500 py-2"> درام</div>
               <hr />

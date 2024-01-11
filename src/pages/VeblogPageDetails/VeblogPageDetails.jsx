@@ -1,16 +1,33 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getWeblogsFromServer } from "../../Redux/stors/WeblogsReduce";
 export default function VeblogPageDetails() {
+  const { id } = useParams();
+  const { AllWeblogs } = useSelector((state) => state.Weblogs);
+  const dispatch = useDispatch();
+  const [WeblogDetails, setWeblogDetails] = useState(null);
+
+  useEffect(() => {
+    dispatch(getWeblogsFromServer());
+    let main = AllWeblogs.find((weblog) => weblog.id === Number(id));
+    setWeblogDetails(main);
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <div>
       <img
-        src="/images/john-wick-4.jpg"
+        src={WeblogDetails?.image}
         alt=""
         className="object-cover h-[737px] w-full "
       />
       <div className="overlay absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black to-transparent "></div>
       <h1 className="absolute bottom-[50%] left-0 right-0 block text-center  text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
-        معرفی پنج فیلم برتر ژانر اکشن در سال ۲۰۲۳
+        {WeblogDetails?.title}
+      </h1>
+      <h1 className="absolute bottom-[40%] left-0 right-0 block text-center  text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+        تست Description
       </h1>
       <div className="bg-[#0c1012] w-[80%] h-auto left-[10.5%] p-5 rounded-lg mt-[-150px] z-10 absolute flex flex-col gap-7">
         <span className="text-[#f2f2f2] font-medium text-justify block leading-9">
@@ -33,7 +50,7 @@ export default function VeblogPageDetails() {
         </span>
         <div>
           <img
-            src="/images/chris-hemsworth-extraction-1536x864.jpg"
+            src="/filmokio/images/chris-hemsworth-extraction-1536x864.jpg"
             className="rounded-lg object-cover"
             alt=""
           />
@@ -54,7 +71,7 @@ export default function VeblogPageDetails() {
         </span>
         <div>
           <img
-            src="/images/thecovenant-1536x864.jpg"
+            src="/filmokio/images/thecovenant-1536x864.jpg"
             className="rounded-lg object-cover"
             alt=""
           />
@@ -73,7 +90,7 @@ export default function VeblogPageDetails() {
         </span>
         <div>
           <img
-            src="/images/john-wick-chapter-4-1536x864.jpg"
+            src="/filmokio/images/john-wick-chapter-4-1536x864.jpg"
             className="rounded-lg object-cover"
             alt=""
           />

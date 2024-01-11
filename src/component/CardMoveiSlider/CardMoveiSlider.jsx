@@ -2,20 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function CardMoveiSlider({
-  href = "/filmokio/movie/1",
-  img,
-  score = " 7.6/10",
-  desc = "شاهزاده پاندیان رانادهران در قرن هفتم حکومت می‌کرد. سلسله چولا قدرت خود را از دست داد و مردم آن مجبور به زندگی در جنگل‌ها شدند",
-  name = "Stutz 2022",
+  id,
+  title,
+  score,
+  shortDesk,
+  image,
 }) {
   return (
-    <Link to={href}>
+    <Link to={`/filmokio/movie/${id}`}>
       <div className="flex-none mx-auto cursor-pointer  group  w-[230px] m-2 relative ">
         <img
           alt="Stutz 2022 movie poster"
           className="rounded-lg brightness-100 group-hover:brightness-[0.3] transition duration-300  card__placeholder"
           height="450"
-          src={img}
+          src={image}
           style={{
             aspectRatio: "300/450",
             objectFit: "cover",
@@ -33,14 +33,14 @@ export default function CardMoveiSlider({
 
         <div className="absolute inset-0 flex flex-col items-center justify-between opacity-0 group-hover:opacity-100 transition duration-300">
           <p className="text-white  p-4 mb-2 text-[17px]   text-justify">
-            {desc}
+            {shortDesk}
           </p>
           <button className="bg-[#f5ad11] rounded-lg text-white px-4 py-2 mb-10">
             ادامه + دانلود
           </button>
         </div>
 
-        <p className="mt-2 text-center text-white">{name}</p>
+        <p className="mt-2 text-center text-white">{title}</p>
       </div>
     </Link>
   );
