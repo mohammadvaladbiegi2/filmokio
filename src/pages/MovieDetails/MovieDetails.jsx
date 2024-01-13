@@ -10,7 +10,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import ArtistMovieDetailsBox from "../../component/ArtistMovieDetailsBox/ArtistMovieDetailsBox";
 
-import CardMoveiSlider from "../../component/CardMoveiSlider/CardMoveiSlider";
 import { useParams } from "react-router-dom";
 
 export default function MovieDetails() {
