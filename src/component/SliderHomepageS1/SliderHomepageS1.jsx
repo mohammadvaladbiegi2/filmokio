@@ -46,11 +46,13 @@ export default function App() {
                   />
                   <div className="overlay flex flex-col">
                     <p className="text-title">{seril.title}</p>
-                    <span className="score  text-[#f5ad11]">{seril.score}</span>
-                    <span className="score2">10/</span>
-                    <Link to={`/filmokio/serial/${seril.id}`}>
-                      <button className="button">ادامه + دانلود</button>
-                    </Link>
+                    <span className="score  hidden md:flex text-[#f5ad11]">
+                      {seril.score}
+                    </span>
+                    <span className="score2 hidden md:flex">10/</span>
+                    <button className="button ms-[-60px] md:ms-0 cursor-pointer">
+                      ادامه + دانلود
+                    </button>
                   </div>
                 </div>
               </Link>
