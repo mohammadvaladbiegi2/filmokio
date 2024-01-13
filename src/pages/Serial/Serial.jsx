@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { IoChevronUpSharp } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa6";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getSerialFromServer } from "../../Redux/stors/SerialReduce";
@@ -241,23 +239,6 @@ export default function Serial() {
               <BoxSerial {...serial} key={serial.id} />
             ))
           )}
-        </div>
-        <div className="flex items-center mt-10 justify-center gap-2">
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-2xl px-10 py-5 flex items-center justify-center w-5 h-5">
-            قبلی
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-[50%] p-6 flex items-center justify-center w-5 h-5">
-            1
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-[50%] p-6 flex items-center justify-center w-5 h-5">
-            2
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-[50%] p-6 flex items-center justify-center w-5 h-5">
-            3
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-2xl px-10 py-5 flex items-center justify-center w-5 h-5">
-            بعدی
-          </button>
         </div>
       </div>
     </div>

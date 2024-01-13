@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getMovieFromServer } from "../../Redux/stors/MoviesReduce";
 import Loader from "../../component/Loader/Loader";
 import Select from "../../component/Select/Select";
+
 export default function Movie() {
   const [Ordered, setOrdered] = useState("all");
   const [showMovie, setShowMovie] = useState([]);
@@ -235,23 +236,6 @@ export default function Movie() {
           ) : (
             AllMovies?.map((movie) => <BoxMovie {...movie} key={movie.id} />)
           )}
-        </div>
-        <div className="flex items-center mt-10 justify-center gap-2">
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-2xl px-10 py-5 flex items-center justify-center w-5 h-5">
-            قبلی
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-[50%] p-6 flex items-center justify-center w-5 h-5">
-            1
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-[50%] p-6 flex items-center justify-center w-5 h-5">
-            2
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-[50%] p-6 flex items-center justify-center w-5 h-5">
-            3
-          </button>
-          <button className="bg-[#66666699] cursor-pointer text-white hover:text-yellow-500 rounded-2xl px-10 py-5 flex items-center justify-center w-5 h-5">
-            بعدی
-          </button>
         </div>
       </div>
     </div>
