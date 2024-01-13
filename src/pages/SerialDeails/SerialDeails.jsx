@@ -33,7 +33,7 @@ export default function SerialDetails() {
     <div className="pt-[150px] pb-12">
       <div className=" text-white min-h-screen p-4 ">
         <div className=" mx-auto max-w-[24rem] md:max-w-[47rem] lg:max-w-[58rem] xl:max-w-none flex flex-col md:flex-row bg-Movie">
-          <div className="flex-none w-[315px] h-[450px] sm:h-[500px] sm:w-[360px] mx-auto xl:max-w-none ">
+          <div className="w-[315px] h-[450px] sm:h-[500px] sm:w-[360px] mx-auto xl:max-w-none ">
             <img
               alt="Blazing Saddles Poster"
               className="w-full h-auto rounded-lg object-cover"
@@ -44,10 +44,10 @@ export default function SerialDetails() {
             <h1 className="text-3xl font-bold  text-center">
               {SerialDetails?.title}
             </h1>
-            <div className="flex items-center justify-center gap-3 mt-10">
+            <div className="flex items-center justify-evenly mt-10">
               <span className="text-sm">R</span>
-              <li className="text-sm">{SerialDetails?.year}</li>
-              <li variant="secondary">{SerialDetails?.timeE} دقیقه</li>
+              <span className="text-sm">{SerialDetails?.year}</span>
+              <div variant="secondary">{SerialDetails?.timeE} دقیقه</div>
             </div>
 
             <div className="flex items-center justify-center gap-5 mt-4">
@@ -58,7 +58,7 @@ export default function SerialDetails() {
                 سینمایی
               </button>
             </div>
-            <div className="flex items-center justify-evenly lg:justify-center space-x-2 mt-4">
+            <div className="flex items-center justify-evenly space-x-2 mt-4">
               <div className="border-solid border-2 border-[#666] p-4 rounded-xl mt-3 cursor-pointer">
                 <IoShareOutline className="text-[#ffd700] w-6 h-6 " />
               </div>
