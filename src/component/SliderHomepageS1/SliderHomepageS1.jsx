@@ -48,7 +48,9 @@ export default function App() {
                     <p className="text-title">{seril.title}</p>
                     <span className="score  text-[#f5ad11]">{seril.score}</span>
                     <span className="score2">10/</span>
-                    <button className="button">ادامه + دانلود</button>
+                    <Link to={`/filmokio/serial/${seril.id}`}>
+                      <button className="button">ادامه + دانلود</button>
+                    </Link>
                   </div>
                 </div>
               </Link>
