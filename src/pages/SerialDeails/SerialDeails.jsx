@@ -33,7 +33,7 @@ export default function SerialDetails() {
     <div className="pt-[150px] pb-12">
       <div className=" text-white min-h-screen p-4 ">
         <div className=" mx-auto max-w-[24rem] md:max-w-[47rem] lg:max-w-[58rem] xl:max-w-none flex flex-col md:flex-row bg-Movie">
-          <div className="w-[315px] h-[450px] sm:h-[500px] sm:w-[360px] mx-auto xl:max-w-none ">
+          <div className="flex-none w-[315px] h-[450px] sm:h-[500px] sm:w-[360px] mx-auto xl:max-w-none ">
             <img
               alt="Blazing Saddles Poster"
               className="w-full h-auto rounded-lg object-cover"
