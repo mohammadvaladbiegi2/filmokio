@@ -3,28 +3,27 @@ import { AiOutlineLike } from "react-icons/ai";
 import { AiOutlineDislike } from "react-icons/ai";
 import { IoShareOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
-import { getMovieFromServer } from "../../Redux/stors/MoviesReduce";
+import { getSerialFromServer } from "../../Redux/stors/SerialReduce";
 import { getArtistFromServer } from "../../Redux/stors/ArtistsReduce";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import ArtistMovieDetailsBox from "../../component/ArtistMovieDetailsBox/ArtistMovieDetailsBox";
 
-import CardMoveiSlider from "../../component/CardMoveiSlider/CardMoveiSlider";
 import { useParams } from "react-router-dom";
 
-export default function MovieDetails() {
+export default function SerialDetails() {
   const { id } = useParams();
-  const { AllMovies } = useSelector((state) => state.Movies);
+  const { AllSerial } = useSelector((state) => state.Serial);
   const { AllArtist } = useSelector((state) => state.Artist);
   const dispatch = useDispatch();
-  const [movieDetails, setmovieDetails] = useState(null);
+  const [SerialDetails, setSerialDetails] = useState(null);
 
   useEffect(() => {
-    dispatch(getMovieFromServer());
+    dispatch(getSerialFromServer());
     dispatch(getArtistFromServer());
-    let main = AllMovies.find((movie) => movie.id === Number(id));
-    setmovieDetails(main);
+    let main = AllSerial.find((Serial) => Serial.id === Number(id));
+    setSerialDetails(main);
 
     window.scroll(0, 0);
   }, []);
@@ -38,22 +37,22 @@ export default function MovieDetails() {
             <img
               alt="Blazing Saddles Poster"
               className="w-full h-auto rounded-lg object-cover"
-              src={movieDetails?.image}
+              src={SerialDetails?.image}
             />
           </div>
           <div className=" md:max-w-[22rem] lg:max-w-[33rem] xl:max-w-none xl:px-[6%] mt-10">
             <h1 className="text-3xl font-bold  text-center">
-              {movieDetails?.title}
+              {SerialDetails?.title}
             </h1>
             <div className="flex items-center justify-evenly mt-10">
               <span className="text-sm">R</span>
-              <span className="text-sm">{movieDetails?.year}</span>
-              <div variant="secondary">{movieDetails?.timeE} دقیقه</div>
+              <span className="text-sm">{SerialDetails?.year}</span>
+              <div variant="secondary">{SerialDetails?.timeE} دقیقه</div>
             </div>
 
             <div className="flex items-center justify-center gap-5 mt-4">
               <button className="bg-transparent text-white  border-solid border-2 border-[#666] rounded-xl p-2">
-                {movieDetails?.category}
+                {SerialDetails?.category}
               </button>
               <button className="bg-transparent text-white  border-solid border-2 border-[#666] rounded-xl p-2">
                 سینمایی
@@ -72,17 +71,17 @@ export default function MovieDetails() {
               <div className="flex items-center justify-center flex-col space-x-2 mt-4 border-solid border-2 border-[#666] rounded-xl p-2">
                 <div>
                   <span className="text-2xl font-bold text-yellow-400">
-                    {movieDetails?.score}
+                    {SerialDetails?.score}
                   </span>
                   <span className="text-2xl font-bold ">/10</span>
                 </div>
-                <span className="text-sm ps-1">{movieDetails?.Vote}k</span>
+                <span className="text-sm ps-1">{SerialDetails?.Vote}k</span>
               </div>
             </div>
             <div className="flex flex-col xl:flex-row xl:items-center xl:justify-center xl:gap-8 mt-6">
               <div className="mt-2">
                 <span className="font-bold">کارگردان: </span>
-                {movieDetails?.writer}
+                {SerialDetails?.writer}
                 {"\n          "}
               </div>
               <div className="mt-2">
@@ -103,7 +102,7 @@ export default function MovieDetails() {
               </button>
             </div>
             <p className="text-sm mt-4 font-normal leading-6">
-              {movieDetails?.desc}
+              {SerialDetails?.desc}
             </p>
           </div>
         </div>
@@ -124,7 +123,7 @@ export default function MovieDetails() {
         </span>
       </div>
       <div className="DownloadLink px-12 sm:px-16 mt-10 gap-6 flex flex-col">
-        {movieDetails?.link.map((links) => (
+        {SerialDetails?.link.map((links) => (
           <div className="flex flex-wrap justify-between items-center bg-[#0c1012] p-5 rounded-md   border-solid border-r-4 border-[#f5ad11]">
             <div className="flex gap-10">
               <div className="flex items-center">
@@ -152,13 +151,13 @@ export default function MovieDetails() {
         <div className="rounded-lg border-solid border-4 border-[#0d1113] flex flex-col item-center p-4 justify-center">
           <span className="font-medium text-white m-auto">زبان:</span>
           <span className="font-medium text-yellow-500 mt-5">
-            {movieDetails?.Language}
+            {SerialDetails?.Language}
           </span>
         </div>
         <div className="rounded-lg border-solid border-4 border-[#0d1113] flex flex-col item-center p-4 justify-center">
           <span className="font-medium text-white m-auto">نویسنده:</span>
           <span className="font-medium text-yellow-500 mt-5">
-            {movieDetails?.writer}
+            {SerialDetails?.writer}
           </span>
         </div>
       </div>

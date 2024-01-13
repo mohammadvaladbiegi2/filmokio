@@ -13,7 +13,7 @@ export default function ArtistCard({
   image,
 }) {
   return (
-    <div className="bg-[#111618] w-[280px] sm:w-[320px] px-2 my-8">
+    <div className="animate__animated animate__fadeInRight  bg-[#111618] w-[280px] sm:w-[320px] px-2 my-8">
       <div className="w-[130px] h-[200px] sm:w-[170px] sm:h-[250px] m-auto mt-[-50px]">
         <img
           src={image}

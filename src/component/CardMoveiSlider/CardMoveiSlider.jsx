@@ -32,7 +32,7 @@ export default function CardMoveiSlider({
         </div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-between opacity-0 group-hover:opacity-100 transition duration-300">
-          <p className="text-white  p-4 mb-2 text-[17px]   text-justify">
+          <p className="text-white  p-4 mb-2 text-[17px] line-clamp-5 lg:line-clamp-3 xl:line-clamp-5  text-justify">
             {shortDesk}
           </p>
           <button className="bg-[#f5ad11] rounded-lg text-white px-4 py-2 mb-10">

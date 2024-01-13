@@ -24,6 +24,7 @@ const MovieSlice = createSlice({
     });
     builder.addCase(getMovieFromServer.fulfilled, (state, action) => {
       state.AllMovies = action.payload.Movies;
+
       state.isLoading = false;
     });
     builder.addCase(getMovieFromServer.rejected, (state, action) => {

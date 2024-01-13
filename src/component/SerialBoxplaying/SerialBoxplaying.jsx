@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SerialBoxplaying({ id, title, score, image }) {
   return (
-    <Link to={`/filmokio/movie/${id}`}>
+    <Link to={`/filmokio/serial/${id}`}>
       <div className="col cursor-pointer mb-5 ">
         <div className="image-container card__placeholder">
           <button className="button-e bg-[#f5ad11] p-2 rounded-sm hover:bg-[#f5ad11d3] absolute ">

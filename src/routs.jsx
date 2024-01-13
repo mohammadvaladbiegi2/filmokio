@@ -5,6 +5,7 @@ const Artists = lazy(() => import("./pages/Artists/Artists"));
 const Movie = lazy(() => import("./pages/Movie/Movie"));
 const MovieDetails = lazy(() => import("./pages/MovieDetails/MovieDetails"));
 const Serial = lazy(() => import("./pages/Serial/Serial"));
+const SerialDetails = lazy(() => import("./pages/SerialDeails/SerialDeails"));
 const VeblogPageDetails = lazy(() =>
   import("./pages/VeblogPageDetails/VeblogPageDetails")
 );
@@ -41,6 +42,14 @@ const routes = [
     element: (
       <Suspense fallback={<Loader />}>
         <Serial />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/filmokio/serial/:id",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <SerialDetails />
       </Suspense>
     ),
   },

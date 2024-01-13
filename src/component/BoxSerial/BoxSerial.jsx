@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export default function BoxMovie({ id, title, score, shortDesk, image }) {
+export default function BoxSerial({ id, title, score, shortDesk, image }) {
   return (
     <Link
-      to={`/filmokio/movie/${id}`}
+      to={`/filmokio/serial/${id}`}
       className="animate__animated animate__fadeInUp  flex-none mx-auto cursor-pointer  group w-[67%] sm:w-[48%] md:w-[30%] lg:w-[15%] aspect-video m-2 relative"
     >
       <img
