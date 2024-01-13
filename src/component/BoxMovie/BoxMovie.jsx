@@ -36,7 +36,7 @@ export default function BoxMovie({ id, title, score, shortDesk, image }) {
         </button>
       </div>
 
-      <p className="mt-2 text-center text-white">{title}</p>
+      <p className="mt-2 text-center text-white line-clamp-1">{title}</p>
     </Link>
   );
 }
