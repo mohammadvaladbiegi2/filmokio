@@ -37,7 +37,7 @@ export default function App() {
         >
           {AllSerial.slice(0, 4).map((seril) => (
             <SwiperSlide key={seril.id}>
-              <Link to={`/filmokio/movie/${seril.id}`}>
+              <Link to={`/filmokio/serial/${seril.id}`}>
                 <div className="container-image cursor-pointer">
                   <img
                     src={seril.bgSlider}

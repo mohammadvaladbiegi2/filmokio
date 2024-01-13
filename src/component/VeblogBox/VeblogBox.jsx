@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function VeblogBox({ id, title, time, image, date }) {
   return (
     <Link to={`/filmokio/veblog/${id}`}>
-      <div className="relative group cursor-pointer hover:-translate-y-3  transition duration-300">
+      <div className="animate__animated animate__zoomIn relative group cursor-pointer  transition duration-300">
         <img
           src={image}
           className="w-[440px] h-[250px] object-cover   rounded-lg "
