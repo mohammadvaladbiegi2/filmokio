@@ -50,9 +50,12 @@ export default function App() {
                       {seril.score}
                     </span>
                     <span className="score2 hidden md:flex">10/</span>
-                    <button className="button ms-[-60px] md:ms-0 cursor-pointer">
+                    <Link
+                      to={`/filmokio/serial/${seril.id}`}
+                      className="button ms-[-60px] md:ms-0 cursor-pointer"
+                    >
                       ادامه + دانلود
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </Link>
