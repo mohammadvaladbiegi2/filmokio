@@ -19,38 +19,17 @@ export default function Artists() {
     dispatch(getArtistFromServer());
   }, [Ordered]);
   useEffect(() => {
-    switch (Ordered) {
-      case "all":
-        setShowArtist(AllArtist);
-        break;
-      case "Man":
-        const filterMan = [...AllArtist].filter(
-          (artist) => artist.gender === "Man"
-        );
-        setShowArtist(filterMan);
-        break;
-      case "Woman":
-        const filterwoman = [...AllArtist].filter(
-          (artist) => artist.gender === "Woman"
-        );
-        setShowArtist(filterwoman);
-        break;
-      case "Actor":
-        const filterActor = [...AllArtist].filter(
-          (artist) => artist.profession === "Actor"
-        );
-        setShowArtist(filterActor);
-        break;
-      case "Director":
-        const filterDirector = [...AllArtist].filter(
-          (artist) => artist.profession === "Director"
-        );
-        setShowArtist(filterDirector);
-        break;
-
-      default:
-        break;
-    }
+  const filtergender = [...AllArtist].filter(
+      (artist) => artist.gender === Ordered
+    );
+    const filterprofession = [...AllArtist].filter(
+      (artist) => artist.profession === Ordered
+    );
+    filtergender.length
+      ? setShowArtist(filtergender)
+      : filterprofession.length
+      ? setShowArtist(filterprofession)
+      : setShowArtist(AllArtist);
   }, [Ordered]);
   return (
     <div className="pt-[200px]">
