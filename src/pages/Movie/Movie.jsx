@@ -19,90 +19,30 @@ export default function Movie() {
     dispatch(getMovieFromServer());
   }, [Ordered]);
   useEffect(() => {
-    switch (Ordered) {
-      case "all":
-        setShowMovie(AllMovies);
-        break;
-      case "drama":
-        const filterdram = [...AllMovies].filter(
-          (movie) => movie.category === "drama"
-        );
-        setShowMovie(filterdram);
-        break;
-      case "comedy":
-        const filtercomedy = [...AllMovies].filter(
-          (movie) => movie.category === "comedy"
-        );
-        setShowMovie(filtercomedy);
-        break;
-      case "action":
-        const filteraction = [...AllMovies].filter(
-          (movie) => movie.category === "action"
-        );
-        setShowMovie(filteraction);
-        break;
-      case "Exciting":
-        const filterExciting = [...AllMovies].filter(
-          (movie) => movie.category === "Exciting"
-        );
-        setShowMovie(filterExciting);
-        break;
-      case "Romantic":
-        const filterRomantic = [...AllMovies].filter(
-          (movie) => movie.category === "Romantic"
-        );
-        setShowMovie(filterRomantic);
-        break;
-      case "Criminal":
-        const filterCriminal = [...AllMovies].filter(
-          (movie) => movie.category === "Criminal"
-        );
-        setShowMovie(filterCriminal);
-        break;
-      case 7:
-        const filterscormovieip7 = [...AllMovies].filter(
-          (movie) => movie.score > 7
-        );
-        setShowMovie(filterscormovieip7);
-        break;
-      case 6:
-        const filterscormovieup6 = [...AllMovies].filter(
-          (movie) => movie.score > 6
-        );
-        setShowMovie(filterscormovieup6);
-        break;
-      case 5:
-        const filterscormovieup5 = [...AllMovies].filter(
-          (movie) => movie.score > 5
-        );
-        setShowMovie(filterscormovieup5);
-        break;
-      case 4:
-        const filterscormovieup4 = [...AllMovies].filter(
-          (movie) => movie.score > 4
-        );
-        setShowMovie(filterscormovieup4);
-        break;
-      case "mostRecent":
-        const filtermostRecent = [...AllMovies].sort((a, b) => b.year - a.year);
-        setShowMovie(filtermostRecent);
-        break;
-      case "IMDBScore":
-        const filterIMDBScore = [...AllMovies].sort(
-          (a, b) => b.score - a.score
-        );
-        setShowMovie(filterIMDBScore);
-        break;
-      case "MostPopular":
-        const filterMostPopular = [...AllMovies].sort(
-          (a, b) => b.popularity - a.popularity
-        );
-        setShowMovie(filterMostPopular);
-        break;
+      const filterdcategory = [...AllMovies].filter(
+      (movie) => movie.category === Ordered
+    );
+    const filterdscore = [...AllMovies].filter(
+      (movie) => movie.score > Number(Ordered)
+    );
+    const filterdpopularity = [...AllMovies].sort(
+      (a, b) => b.popularity - a.popularity
+    );
 
-      default:
-        break;
-    }
+    const filterdyear = [...AllMovies].sort((a, b) => b.year - a.year);
+    const filterdscoreIMBD = [...AllMovies].sort((a, b) => b.score - a.score);
+
+    filterdcategory.length
+      ? setShowMovie(filterdcategory)
+      : filterdscore.length
+      ? setShowMovie(filterdscore)
+      : Ordered === "MostPopular"
+      ? setShowMovie(filterdpopularity)
+      : Ordered === "mostRecent"
+      ? setShowMovie(filterdyear)
+      : Ordered === "IMDBScore"
+      ? setShowMovie(filterdscoreIMBD)
+      : setShowMovie(AllMovies);
   }, [Ordered]);
 
   return (
