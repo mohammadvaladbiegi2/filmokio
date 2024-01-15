@@ -18,90 +18,28 @@ export default function Serial() {
     dispatch(getSerialFromServer());
   }, [Ordered]);
   useEffect(() => {
-    switch (Ordered) {
-      case "all":
-        setShowMovie(AllSerial);
-        break;
-      case "drama":
-        const filterdram = [...AllSerial].filter(
-          (movie) => movie.category === "drama"
-        );
-        setShowMovie(filterdram);
-        break;
-      case "comedy":
-        const filtercomedy = [...AllSerial].filter(
-          (movie) => movie.category === "comedy"
-        );
-        setShowMovie(filtercomedy);
-        break;
-      case "action":
-        const filteraction = [...AllSerial].filter(
-          (movie) => movie.category === "action"
-        );
-        setShowMovie(filteraction);
-        break;
-      case "Exciting":
-        const filterExciting = [...AllSerial].filter(
-          (movie) => movie.category === "Exciting"
-        );
-        setShowMovie(filterExciting);
-        break;
-      case "Romantic":
-        const filterRomantic = [...AllSerial].filter(
-          (movie) => movie.category === "Romantic"
-        );
-        setShowMovie(filterRomantic);
-        break;
-      case "Criminal":
-        const filterCriminal = [...AllSerial].filter(
-          (movie) => movie.category === "Criminal"
-        );
-        setShowMovie(filterCriminal);
-        break;
-      case 7:
-        const filterscormovieip7 = [...AllSerial].filter(
-          (movie) => movie.score > 7
-        );
-        setShowMovie(filterscormovieip7);
-        break;
-      case 6:
-        const filterscormovieup6 = [...AllSerial].filter(
-          (movie) => movie.score > 6
-        );
-        setShowMovie(filterscormovieup6);
-        break;
-      case 5:
-        const filterscormovieup5 = [...AllSerial].filter(
-          (movie) => movie.score > 5
-        );
-        setShowMovie(filterscormovieup5);
-        break;
-      case 4:
-        const filterscormovieup4 = [...AllSerial].filter(
-          (movie) => movie.score > 4
-        );
-        setShowMovie(filterscormovieup4);
-        break;
-      case "mostRecent":
-        const filtermostRecent = [...AllSerial].sort((a, b) => b.year - a.year);
-        setShowMovie(filtermostRecent);
-        break;
-      case "IMDBScore":
-        const filterIMDBScore = [...AllSerial].sort(
-          (a, b) => b.score - a.score
-        );
-        setShowMovie(filterIMDBScore);
-        break;
-      case "MostPopular":
-        const filterMostPopular = [...AllSerial].sort(
-          (a, b) => b.popularity - a.popularity
-        );
-        setShowMovie(filterMostPopular);
-        break;
-
-      default:
-        break;
-    }
+   const filterdcategory = [...AllSerial].filter(
+      (movie) => movie.category === Ordered
+    );
+    const filterdscore = [...AllSerial].filter(
+      (movie) => movie.score > Number(Ordered)
+    );
+    const filterdpopularity = [...AllSerial].sort(
+      (a, b) => b.popularity - a.popularity
+    );
+    const filterdyear = [...AllSerial].sort((a, b) => b.year - a.year);
+    const filterdscoreIMBD = [...AllSerial].sort((a, b) => b.score - a.score);
+    filterdcategory.length
+      ? setShowMovie(filterdcategory)
+      : filterdscore.length
+      ? setShowMovie(filterdscore)
+      : Ordered === "MostPopular"
+      ? setShowMovie(filterdpopularity)
+      : Ordered === "mostRecent"
+      ? setShowMovie(filterdyear)
+      : Ordered === "IMDBScore"
+      ? setShowMovie(filterdscoreIMBD)
+      : setShowMovie(AllSerial);
   }, [Ordered]);
 
   return (
